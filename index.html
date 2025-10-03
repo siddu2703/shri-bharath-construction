@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Bharath Construction - Building Your Dreams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Cinzel:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services-new.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">OMR, Chennai</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-primary">Get Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-image-container">
+            <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Sri Bharath Construction Project" class="hero-image">
+            <div class="hero-image-overlay"></div>
+        </div>
+        <div class="hero-text-overlay">
+            <h1>SRI BHARATH<br>CONSTRUCTION</h1>
+            <p class="subtitle">Building Your Dreams</p>
+        </div>
+    </section>
+
+    <!-- Hero Content Section -->
+    <section class="hero-content-section">
+        <div class="container">
+            <div class="hero-content-wrapper">
+                <div class="hero-text-content">
+                    <h1 class="hero-main-title">
+                        Building Excellence,<br>
+                        <span class="title-highlight">Crafting Dreams</span>
+                    </h1>
+                    <p class="hero-description">Transform your vision into reality with 20+ years of construction expertise across Chennai. We deliver value through quality craftsmanship and unwavering commitment.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary-modern">Start Your Project</a>
+                    </div>
+                </div>
+                <div class="hero-stats-modern">
+                    <div class="stat-card">
+                        <span class="stat-number-modern" data-target="25">0</span>
+                        <span class="stat-label-modern">Expert Workers</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number-modern" data-target="50">0</span>
+                        <span class="stat-label-modern">Happy Clients</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number-modern" data-target="50">0</span>
+                        <span class="stat-label-modern">Completed Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number-modern" data-target="10">0</span>
+                        <span class="stat-label-modern">Running Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">Comprehensive construction solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="residential">
+                    <div class="service-image">
+                        <div class="service-overlay">
+                            <span class="service-number">01</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Residential Construction</h3>
+                        <p>Custom homes built with precision, quality, and attention to every detail.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-service="commercial">
+                    <div class="service-image">
+                        <div class="service-overlay">
+                            <span class="service-number">02</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Commercial Projects</h3>
+                        <p>Modern commercial spaces designed for functionality and aesthetics.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-service="renovation">
+                    <div class="service-image">
+                        <div class="service-overlay">
+                            <span class="service-number">03</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Renovation & Remodeling</h3>
+                        <p>Transform existing spaces into beautiful, functional environments.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-service="design">
+                    <div class="service-image">
+                        <div class="service-overlay">
+                            <span class="service-number">04</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Design & Planning</h3>
+                        <p>Expert architectural design and construction planning services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Modal -->
+    <div class="services-modal" id="servicesModal">
+        <button class="modal-close" id="modalClose">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 5rem;">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Building Aspirations, Delivering Value</h2>
+                <p class="section-description">Two decades of excellence in construction</p>
+            </div>
+            <div class="about-layout">
+                <div class="about-text-block">
+                    <p>Sri Bharath Construction is a Construction Company committed to building aspirations and delivering value. In the last twenty years, we have developed several prime residential real estate across Chennai.</p>
+                    <p>Over 50 happy families across 14+ landmark properties stand testimony to our commitment. In the twenty years of our journey, we at Sri Bharath Construction are all set to progress further forward with projects worth over ₹8 crores in the pipeline.</p>
+                </div>
+
+                <div class="about-features-grid">
+                    <div class="about-feature-card">
+                        <div class="feature-number">01</div>
+                        <h4>Quality Assurance</h4>
+                        <p>Uncompromising standards in every project with meticulous attention to detail</p>
+                    </div>
+                    <div class="about-feature-card">
+                        <div class="feature-number">02</div>
+                        <h4>Expert Team</h4>
+                        <p>25+ skilled professionals dedicated to excellence in construction</p>
+                    </div>
+                    <div class="about-feature-card">
+                        <div class="feature-number">03</div>
+                        <h4>Timely Delivery</h4>
+                        <p>Projects completed on schedule with professional execution</p>
+                    </div>
+                    <div class="about-feature-card">
+                        <div class="feature-number">04</div>
+                        <h4>Prime Locations</h4>
+                        <p>14+ landmark properties across Chennai's most sought-after areas</p>
+                    </div>
+                    <div class="about-feature-card">
+                        <div class="feature-number">05</div>
+                        <h4>Customer Satisfaction</h4>
+                        <p>50+ happy families trust us for their dream homes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">Explore our latest construction masterpieces</p>
+            </div>
+            <div class="projects-collage" id="projectsCollage">
+                <div class="project-card" data-project="villa">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Modern Villa Estate">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Luxury Residential</span>
+                            <h3>Modern Villa Estate</h3>
+                            <p>Contemporary design with premium finishes</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="apartments">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Riverside Apartments">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Multi-Unit Residential</span>
+                            <h3>Riverside Apartments</h3>
+                            <p>Premium living spaces with modern amenities</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="office">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Corporate Office">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Commercial Building</span>
+                            <h3>Corporate Office Tower</h3>
+                            <p>State-of-the-art commercial complex</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="shopping">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Shopping Complex">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Retail & Commercial</span>
+                            <h3>Shopping Complex</h3>
+                            <p>Modern retail space with premium infrastructure</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="townhouse">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Luxury Townhouses">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Residential Complex</span>
+                            <h3>Luxury Townhouses</h3>
+                            <p>Elegant townhouses with private gardens</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="boutique">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Boutique Hotel">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Hospitality</span>
+                            <h3>Boutique Hotel</h3>
+                            <p>Luxury hotel with world-class amenities</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="penthouse">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Luxury Penthouse">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Premium Residential</span>
+                            <h3>Luxury Penthouse</h3>
+                            <p>High-rise luxury living with panoramic views</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="resort">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Beach Resort">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Hospitality</span>
+                            <h3>Beach Resort</h3>
+                            <p>Coastal resort with world-class amenities</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="mall">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Shopping Mall">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Commercial</span>
+                            <h3>Premium Shopping Mall</h3>
+                            <p>Multi-level retail and entertainment complex</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="farmhouse">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Luxury Farmhouse">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Countryside Living</span>
+                            <h3>Luxury Farmhouse</h3>
+                            <p>Expansive estate with modern amenities</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="warehouse">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Industrial Warehouse">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Industrial</span>
+                            <h3>Industrial Warehouse</h3>
+                            <p>Modern logistics and storage facility</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="school">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="International School">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Educational</span>
+                            <h3>International School</h3>
+                            <p>State-of-the-art educational campus</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="clinic">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Medical Center">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Healthcare</span>
+                            <h3>Medical Center</h3>
+                            <p>Advanced healthcare facility with modern equipment</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="sports">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Sports Complex">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Recreation</span>
+                            <h3>Sports Complex</h3>
+                            <p>Multi-sport facility with Olympic standards</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="skyrise">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Residential Skyrise">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">High-Rise Living</span>
+                            <h3>Residential Skyrise</h3>
+                            <p>40-floor luxury apartments with city views</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="restaurant">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Fine Dining Restaurant">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Hospitality</span>
+                            <h3>Fine Dining Restaurant</h3>
+                            <p>Elegant dining space with contemporary design</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="duplex">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Modern Duplex">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Residential</span>
+                            <h3>Modern Duplex Homes</h3>
+                            <p>Two-story living with premium finishes</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="plaza">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Commercial Plaza">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Commercial</span>
+                            <h3>Business Plaza</h3>
+                            <p>Mixed-use commercial and office complex</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="cottage">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Garden Cottage">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Countryside</span>
+                            <h3>Garden Cottage Estate</h3>
+                            <p>Charming homes surrounded by nature</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="hospital">
+                    <div class="project-image">
+                        <img src="HELIX_HEATHWOOD_V04_Final.jpg" alt="Multi-Specialty Hospital">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <span class="project-category">Healthcare</span>
+                            <h3>Multi-Specialty Hospital</h3>
+                            <p>Advanced medical facility with 200+ beds</p>
+                            <a href="#contact" class="project-link">
+                                <span>View Project</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">Don't just take our word for it</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">ஸ்ரீ பாரத் கன்ஸ்ட்ரக்ஷன் எங்கள் கனவு இல்லத்தை நனவாக்கியது. அவர்களின் விவரங்களுக்கான கவனம் மற்றும் தொழில்முறை அனைத்து எதிர்பார்ப்புகளையும் மீறியது. மிகவும் பரிந்துரைக்கப்படுகிறது!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div class="author-info">
+                            <h4>Rajesh Sharma</h4>
+                            <p>Homeowner, Chennai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">Outstanding work on our residential project. The project was completed on time and within budget. Their team is incredibly skilled and reliable.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PK</div>
+                        <div class="author-info">
+                            <h4>Priya Kumar</h4>
+                            <p>Property Owner, OMR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">గొప్ప వృత్తి నైపుణ్యంతో అద్భుతమైన నిర్మాణ సంస్థ. వారు మా విల్లా ప్రాజెక్ట్‌ను వాగ్దానం చేసినట్లుగా అందించారు. నాణ్యమైన పని మరియు సకాలంలో పూర్తి!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">VR</div>
+                        <div class="author-info">
+                            <h4>Venkat Reddy</h4>
+                            <p>Villa Owner, Chennai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">கட்டுமான தரத்தில் மிகவும் மகிழ்ச்சி. அவர்கள் எங்கள் தேவைகளை சரியாக புரிந்து எதிர்பார்ப்புகளுக்கு அப்பால் வழங்கினர். மிகவும் தொழில்முறை குழு!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LM</div>
+                        <div class="author-info">
+                            <h4>Lakshmi Menon</h4>
+                            <p>Homeowner, Chennai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">The construction quality is exceptional. Sri Bharath's expertise and commitment to delivering value are unmatched. Very satisfied with our investment.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <h4>Arun Mohan</h4>
+                            <p>Real Estate Investor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">ఉత్తమ నిర్మాణ అనుభవం! ప్రణాళిక నుండి అమలు వరకు, అన్నీ ఖచ్చితంగా ఉన్నాయి. శ్రీ భరత్ బృందం వృత్తిపరమైనది మరియు విశ్వసనీయమైనది.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <h4>Srinivas Kumar</h4>
+                            <p>Apartment Owner, OMR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">எங்கள் குடியிருப்பு திட்டத்தில் சிறந்த வேலை. திட்டம் நேரத்திற்குள் மற்றும் பட்ஜெட்டில் முடிக்கப்பட்டது. அவர்களின் குழு நம்பமுடியாத திறமையானது மற்றும் நம்பகமானது.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <h4>Muthu Kumar</h4>
+                            <p>Property Owner, OMR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">Best construction experience! From planning to execution, everything was perfect. Sri Bharath team is professional and trustworthy.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RN</div>
+                        <div class="author-info">
+                            <h4>Ravi Nair</h4>
+                            <p>Homeowner, Chennai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">மிகச்சிறந்த கட்டுமான நிறுவனம். எங்கள் வீட்டை கனவு போல் கட்டி தந்தனர். சரியான நேரத்தில் தரமான வேலை. மிகவும் பரிந்துரைக்கிறேன்!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SP</div>
+                        <div class="author-info">
+                            <h4>Suresh Pandian</h4>
+                            <p>Villa Owner, OMR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">Exceptional service and quality construction. Sri Bharath team handled our commercial project with utmost professionalism. Delivered on time with excellent craftsmanship!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DJ</div>
+                        <div class="author-info">
+                            <h4>David Johnson</h4>
+                            <p>Business Owner, Chennai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev">←</button>
+                <button class="slider-btn next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Build Something Amazing Together</h2>
+                    <p>Get in touch with us to discuss your next project. Our team is ready to bring your vision to life.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>OMR, Chennai, Tamilnadu, India</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 9840336793 / 9080152531</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>sribharathconstruction@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option value="residential">Residential Construction</option>
+                                <option value="commercial">Commercial Projects</option>
+                                <option value="renovation">Renovation & Remodeling</option>
+                                <option value="design">Design & Planning</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Tell us about your project" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <span class="logo-icon">🏗️</span>
+                        <span class="logo-text">Sri Bharath</span>
+                    </div>
+                    <p>Building excellence since 2005. Your trusted construction partner for residential and commercial projects across Chennai.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Residential</a></li>
+                        <li><a href="#services">Commercial</a></li>
+                        <li><a href="#services">Renovation</a></li>
+                        <li><a href="#services">Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sri Bharath Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="services-new.js"></script>
+</body>
+</html>

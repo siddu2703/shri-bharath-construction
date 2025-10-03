@@ -1,0 +1,221 @@
+/* SERVICES SECTION - COMPLETE REWRITE */
+
+.services {
+    background: #f9f9f9;
+    padding: 8rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.service-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+                      url('HELIX_HEATHWOOD_V04_Final.jpg');
+    transition: all 0.6s ease;
+}
+
+.service-card:hover .service-image {
+    transform: scale(1.1);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service-number {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.15);
+    font-family: 'Space Grotesk', sans-serif;
+    z-index: 5;
+}
+
+.service-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem;
+    z-index: 10;
+}
+
+.service-content h3 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.service-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* SERVICES MODAL */
+
+.services-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.services-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-close {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: #AAAC82;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+.modal-close:hover {
+    background: #8a8c62;
+    transform: rotate(90deg);
+}
+
+.modal-close svg {
+    stroke: white;
+}
+
+.modal-content {
+    max-width: 1400px;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 3rem;
+}
+
+.modal-main-card {
+    height: 600px;
+    position: sticky;
+    top: 2rem;
+}
+
+.modal-main-card .service-card {
+    height: 100%;
+}
+
+.modal-subcategories h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.modal-subcategories h4 {
+    color: #AAAC82;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subcategories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.subcategory-card {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.subcategory-card:hover {
+    transform: translateY(-10px);
+}
+
+.subcategory-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+                      url('HELIX_HEATHWOOD_V04_Final.jpg');
+    transition: all 0.6s ease;
+}
+
+.subcategory-card:hover .subcategory-image {
+    transform: scale(1.1);
+}
+
+.subcategory-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.subcategory-card h5 {
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    transition: all 0.3s ease;
+}
+
+.subcategory-card:hover h5 {
+    color: #AAAC82;
+}
+
+.subcategory-card p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
