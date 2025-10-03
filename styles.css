@@ -1074,150 +1074,150 @@ section {
     flex-shrink: 0;
 }
 
-/* Varied sizes for collage effect - width and height */
+/* Varied sizes for collage effect - width and height - REDUCED FOR BETTER DISPLAY */
 .project-card:nth-child(1) {
-    width: 380px;
-    height: 550px;
+    width: 280px;
+    height: 400px;
 }
 
 .project-card:nth-child(2) {
-    width: 320px;
-    height: 380px;
-    margin-top: 100px;
+    width: 240px;
+    height: 300px;
+    margin-top: 80px;
 }
 
 .project-card:nth-child(3) {
-    width: 420px;
-    height: 620px;
+    width: 300px;
+    height: 450px;
 }
 
 .project-card:nth-child(4) {
-    width: 350px;
-    height: 450px;
-    margin-top: 80px;
+    width: 260px;
+    height: 350px;
+    margin-top: 60px;
 }
 
 .project-card:nth-child(5) {
-    width: 400px;
-    height: 500px;
-    margin-top: 50px;
+    width: 290px;
+    height: 380px;
+    margin-top: 40px;
 }
 
 .project-card:nth-child(6) {
-    width: 380px;
-    height: 650px;
+    width: 280px;
+    height: 480px;
 }
 
 .project-card:nth-child(7) {
-    width: 340px;
-    height: 420px;
-    margin-top: 120px;
+    width: 250px;
+    height: 320px;
+    margin-top: 90px;
 }
 
 .project-card:nth-child(8) {
-    width: 410px;
-    height: 580px;
-    margin-top: 40px;
+    width: 300px;
+    height: 420px;
+    margin-top: 30px;
 }
 
 .project-card:nth-child(9) {
-    width: 360px;
-    height: 480px;
-    margin-top: 90px;
-}
-
-.project-card:nth-child(10) {
-    width: 390px;
-    height: 600px;
-}
-
-.project-card:nth-child(11) {
-    width: 330px;
-    height: 400px;
-    margin-top: 110px;
-}
-
-.project-card:nth-child(12) {
-    width: 400px;
-    height: 530px;
-    margin-top: 60px;
-}
-
-.project-card:nth-child(13) {
-    width: 350px;
-    height: 460px;
+    width: 270px;
+    height: 360px;
     margin-top: 70px;
 }
 
-.project-card:nth-child(14) {
-    width: 380px;
-    height: 520px;
-    margin-top: 100px;
-}
-
-.project-card:nth-child(15) {
-    width: 410px;
-    height: 590px;
-}
-
-.project-card:nth-child(16) {
-    width: 340px;
+.project-card:nth-child(10) {
+    width: 290px;
     height: 440px;
-    margin-top: 130px;
 }
 
-.project-card:nth-child(17) {
-    width: 390px;
-    height: 570px;
+.project-card:nth-child(11) {
+    width: 250px;
+    height: 310px;
+    margin-top: 85px;
+}
+
+.project-card:nth-child(12) {
+    width: 290px;
+    height: 390px;
     margin-top: 50px;
 }
 
+.project-card:nth-child(13) {
+    width: 260px;
+    height: 340px;
+    margin-top: 55px;
+}
+
+.project-card:nth-child(14) {
+    width: 280px;
+    height: 380px;
+    margin-top: 75px;
+}
+
+.project-card:nth-child(15) {
+    width: 300px;
+    height: 430px;
+}
+
+.project-card:nth-child(16) {
+    width: 250px;
+    height: 330px;
+    margin-top: 95px;
+}
+
+.project-card:nth-child(17) {
+    width: 290px;
+    height: 410px;
+    margin-top: 40px;
+}
+
 .project-card:nth-child(18) {
-    width: 360px;
-    height: 490px;
-    margin-top: 80px;
+    width: 270px;
+    height: 360px;
+    margin-top: 65px;
 }
 
 .project-card:nth-child(19) {
-    width: 400px;
-    height: 610px;
+    width: 290px;
+    height: 450px;
 }
 
 .project-card:nth-child(20) {
-    width: 350px;
-    height: 430px;
-    margin-top: 140px;
+    width: 260px;
+    height: 320px;
+    margin-top: 100px;
 }
 
 .project-card:nth-child(21) {
-    width: 370px;
-    height: 560px;
-    margin-top: 60px;
+    width: 280px;
+    height: 410px;
+    margin-top: 50px;
 }
 
 .project-card:nth-child(22) {
-    width: 380px;
-    height: 540px;
-    margin-top: 90px;
+    width: 280px;
+    height: 390px;
+    margin-top: 70px;
 }
 
 .project-card:nth-child(23) {
-    width: 360px;
-    height: 470px;
-    margin-top: 120px;
+    width: 270px;
+    height: 350px;
+    margin-top: 90px;
 }
 
 .project-card:nth-child(24) {
-    width: 400px;
-    height: 620px;
-    margin-top: 40px;
+    width: 290px;
+    height: 450px;
+    margin-top: 35px;
 }
 
 .project-image {
     width: 100%;
     height: 100%;
-    min-height: 350px;
-    max-height: 650px;
+    min-height: 250px;
+    max-height: 480px;
     position: relative;
     overflow: hidden;
 }
@@ -1226,7 +1226,7 @@ section {
 .project-image video {
     width: 100%;
     height: 100%;
-    max-height: 650px;
+    max-height: 480px;
     object-fit: cover;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
